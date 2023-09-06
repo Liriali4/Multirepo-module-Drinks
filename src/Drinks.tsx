@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, ListItem, Text, UnorderedList } from '@chakra-ui/react';
 import { useCategoriasStore } from './State';
 
-const Drinks = (): JSX.Element => {
+export default function Drinks(): JSX.Element{
     const selectedCategoria = useCategoriasStore((state) => state.selectedCategoria);
 
     const categoriasBebidas = {
@@ -40,4 +40,3 @@ const Drinks = (): JSX.Element => {
     );
 };
 
-export default Drinks;
