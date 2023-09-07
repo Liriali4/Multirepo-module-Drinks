@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, ListItem, Text, UnorderedList } from '@chakra-ui/react';
-interface DrinksProps {
+
+type DrinksProps = {
     selectedCategoria: string;
 }
 
