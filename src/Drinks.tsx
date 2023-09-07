@@ -1,9 +1,10 @@
 import React from 'react';
 import { Box, ListItem, Text, UnorderedList } from '@chakra-ui/react';
-import { useCategoriasStore } from './State';
+interface DrinksProps {
+    selectedCategoria: string;
+}
 
-export default function Drinks(): JSX.Element{
-    const selectedCategoria = useCategoriasStore((state) => state.selectedCategoria);
+export default function Drinks({ selectedCategoria }: DrinksProps): JSX.Element{
 
     const categoriasBebidas = {
         'Bebidas Alcoólicas': [
